@@ -1,0 +1,19 @@
+{
+  "Server": {
+    "PORT": 8080
+  },
+  "Database": {
+    "User": "pumzmhqgdyarbo",
+    "Password": "b4d2cfbc0ff0d0320a3f7df0aa05ccd404a437fccec192bdf509f7faf3508e6e",
+    "Server": "ec2-34-242-8-97.eu-west-1.compute.amazonaws.com",
+    "Port": 5432,
+    "Database": "d6qtk4cdns4v2t"
+  },
+  "DatabaseLocal": {
+    "User": "postgres",
+    "Password": "Cawb@123123123.",
+    "Server": "localhost",
+    "Port": 5432,
+    "Database": "pds"
+  }
+}

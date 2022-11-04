@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "99813de5-979d-47e1-811f-6336c40e70d8",
+		"name": "pds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "Admin",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin@webid.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "admin@webid.com:admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/authenticate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FooBar",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "foobar",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "foo@bar.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/authenticate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Baz",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "baz",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "baz@baz.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/authenticate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "purchase",
+			"item": [
+				{
+					"name": "ShowAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "foobar",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "foo@bar.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/ads/ShowAll",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ads",
+								"ShowAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "payments",
+			"item": [
+				{
+					"name": "findAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "foobar",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "foo@bar.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/ads/ShowAll",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ads",
+								"ShowAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findOne",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "foobar",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "foo@bar.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/pay/get/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pay",
+								"get",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "foobar",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "foo@bar.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"value\":100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/pay/?value=100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pay",
+								""
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
